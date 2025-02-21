@@ -3,13 +3,13 @@ public class TesteAnotacao {
         // Obtém a anotação da classe Cliente
         Tabela tabelaCliente = Cliente.class.getAnnotation(Tabela.class);
         if (tabelaCliente != null) {
-            System.out.println("Nome da tabela Cliente: " + tabelaCliente.nome());
+            System.out.println("Nome da tabela: " + tabelaCliente.nome());
         }
 
         // Obtém a anotação da classe Produto
         Tabela tabelaProduto = Produto.class.getAnnotation(Tabela.class);
         if (tabelaProduto != null) {
-            System.out.println("Nome da tabela Produto: " + tabelaProduto.nome());
+            System.out.println("Nome da tabela: " + tabelaProduto.nome());
         }
     }
 }
